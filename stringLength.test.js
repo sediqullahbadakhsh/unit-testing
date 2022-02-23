@@ -1,13 +1,28 @@
 const stringLength = require("./stringLength");
 
 test("Correct_string_length", () => {
-  expect(stringLength("h")).toBe(1);
+  //Arrange
+  string = "h";
+  //Act
+  const value = string;
+  //Assert
+  expect(stringLength(value)).toBe(1);
 });
 
 test("String-at-least-1-character-long", () => {
-  expect(stringLength("")).toBeFalsy();
+  //Arrange
+  string = "";
+  //Act
+  const value = string;
+  //Assert
+  expect(stringLength(value)).toBeFalsy();
 });
 
 test("String-less-then-10-characters-long", () => {
-  expect(stringLength("Hello World of JS!")).toBeFalsy();
+  //Arrange
+  string = "helo JS world!";
+  //Act
+  const value = string;
+  //Assert
+  expect(stringLength(value)).toBeFalsy();
 });

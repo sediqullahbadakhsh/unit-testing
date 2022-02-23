@@ -1,5 +1,10 @@
 const reverseString = require("./reverseString");
 
 test("reverse_string", () => {
-  expect(reverseString("hello")).toBe("olleh");
+  //Arrange
+  string = "hello";
+  //Act
+  const text = string;
+  //Assert
+  expect(reverseString(text)).toBe("olleh");
 });
